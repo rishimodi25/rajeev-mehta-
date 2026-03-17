@@ -25,7 +25,7 @@ def job():
     with client:
         client.loop.run_until_complete(repost())
 
-schedule.every().day.at("09:00").do(job)
+schedule.every().day.at("09:10").do(job)
 schedule.every().day.at("13:00").do(job)
 schedule.every().day.at("18:00").do(job)
 
